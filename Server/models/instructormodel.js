@@ -9,9 +9,8 @@ const instructorSchema=mongoose.Schema({
         required:true
     }
     ,
-    phone_number:{
-        type:Number,
-        length:10,
+    email:{
+        type:String,
         required:true
     },
     location:{
@@ -19,6 +18,10 @@ const instructorSchema=mongoose.Schema({
         required:true
     },
     specialization:{
+        type:String,
+        required:true
+    },
+    password:{
         type:String,
         required:true
     }
